@@ -19,6 +19,9 @@
   "company": "Milochau",
   "copyright": "Copyright © Milochau",
   "main": "index.js",
+  "scripts": {
+    "build": ""
+  },
   "files": [
     "index.js"
   ],
