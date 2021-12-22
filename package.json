@@ -1,0 +1,37 @@
+{
+  "name": "@amilochau/eslint-config-vue",
+  "version": "0.1.0-beta.1",
+  "description": "ESLint configuration for vue.js projects",
+  "author": "Antoine Milochau",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amilochau/eslint-config-vue"
+  },
+  "homepage": "https://github.com/amilochau/eslint-config-vue#readme",
+  "bugs": {
+    "url": "https://github.com/amilochau/eslint-config-vue/issues"
+  },
+  "funding": "https://github.com/sponsors/amilochau",
+  "company": "Milochau",
+  "copyright": "Copyright © Milochau",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "eslint": "^6.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2"
+  }
+}
