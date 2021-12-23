@@ -1,6 +1,6 @@
 {
   "name": "@amilochau/eslint-config-vue",
-  "version": "0.1.0-beta.1",
+  "version": "0.1.0-beta.2",
   "description": "ESLint configuration for vue.js projects",
   "author": "Antoine Milochau",
   "license": "MIT",
@@ -11,6 +11,11 @@
     "type": "git",
     "url": "https://github.com/amilochau/eslint-config-vue"
   },
+  "keywords": [
+    "eslint",
+    "plugin",
+    "vue"
+  ],
   "homepage": "https://github.com/amilochau/eslint-config-vue#readme",
   "bugs": {
     "url": "https://github.com/amilochau/eslint-config-vue/issues"
@@ -20,11 +25,28 @@
   "copyright": "Copyright © Milochau",
   "main": "index.js",
   "scripts": {
-    "build": ""
+    "build": "",
+    "test": "jest"
   },
   "files": [
     "index.js"
   ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "execa": "^4.0.3",
+    "jest": "^27.4.5",
+    "typescript": "^4.4.4",
+    "vue": "^2.6.14",
+    "vue-class-component": "^7.2.6",
+    "vue-property-decorator": "^9.1.2"
+  },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
