@@ -2,12 +2,12 @@ module.exports = {
   extends: [
     'plugin:vue/recommended',
     'eslint:recommended',
-    '@vue/typescript/recommended'
+    '@vue/typescript/recommended',
   ],
   overrides: [{
-    files: ['*.ts', '*.tsx'],
+    files: ['*.ts', '*.tsx', '*.vue'],
     parserOptions: {
-      ecmaVersion: 2020
+      ecmaVersion: 2020,
     },
     rules: {
       '@typescript-eslint/ban-types': 'off',
@@ -16,32 +16,32 @@ module.exports = {
       '@typescript-eslint/no-unused-vars': 'error',
       'array-bracket-spacing': [
         'error',
-        'never'
+        'never',
       ],
       'arrow-spacing': [
         'error',
         {
           before: true,
-          after: true
-        }
+          after: true,
+        },
       ],
       'block-spacing': 'error',
       'brace-style': 'error',
       camelcase: 'off',
       'comma-dangle': [
         'error',
-        'always-multiline'
+        'always-multiline',
       ],
       'comma-spacing': [
         'error',
         {
           before: false,
-          after: true
-        }
+          after: true,
+        },
       ],
       'comma-style': [
         'error',
-        'last'
+        'last',
       ],
       curly: 'error',
       'default-case': 'error',
@@ -49,34 +49,34 @@ module.exports = {
       'dot-notation': 'error',
       'eol-last': [
         'error',
-        'always'
+        'always',
       ],
       eqeqeq: 'error',
       'func-call-spacing': [
         'error',
-        'never'
+        'never',
       ],
       indent: [
         'error',
-        2
+        2,
       ],
       'key-spacing': [
         'error',
         {
           afterColon: true,
           beforeColon: false,
-          mode: 'strict'
-        }
+          mode: 'strict',
+        },
       ],
       'keyword-spacing': [
         'error',
         {
-          before: true
-        }
+          before: true,
+        },
       ],
       'lines-between-class-members': [
         'error',
-        'always'
+        'always',
       ],
       'new-parens': 'error',
       'no-alert': 'error',
@@ -86,8 +86,8 @@ module.exports = {
       'no-multiple-empty-lines': [
         'error',
         {
-          max: 1
-        }
+          max: 1,
+        },
       ],
       'no-multi-spaces': 'error',
       'no-param-reassign': 'warn',
@@ -108,28 +108,36 @@ module.exports = {
       'prefer-template': 'error',
       quotes: [
         'error',
-        'single'
+        'single',
       ],
       'require-await': 'error',
-      semi: 'error',
-      'semi-style': [
-        'error',
-        'last'
-      ],
       'space-before-blocks': 'error',
-      'space-before-function-paren': [
-        'error',
-        'always'
-      ],
       'space-in-parens': [
         'error',
-        'never'
+        'never',
       ],
       'space-infix-ops': 'error',
       strict: 'error',
       'switch-colon-spacing': 'error',
       'template-curly-spacing': 'error',
-      yoda: 'error'
-    }
-  }]
+      yoda: 'error',
+    },
+  },
+{
+  files: ['*.vue'],
+  rules: {
+    'vue/html-closing-bracket-newline': ['warn', {
+      'singleline': 'never',
+      'multiline': 'never'
+    }],
+    'vue/max-attributes-per-line': ['warn', {
+      'singleline': {
+        'max': 2
+      },      
+      'multiline': {
+        'max': 1
+      }
+    }]
+  }
+}],
 }
