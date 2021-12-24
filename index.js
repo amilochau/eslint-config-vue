@@ -122,5 +122,22 @@ module.exports = {
       'template-curly-spacing': 'error',
       yoda: 'error',
     },
-  }],
+  },
+{
+  files: ['*.vue'],
+  rules: {
+    'vue/html-closing-bracket-newline': ['warn', {
+      'singleline': 'never',
+      'multiline': 'never'
+    }],
+    'vue/max-attributes-per-line': ['warn', {
+      'singleline': {
+        'max': 2
+      },      
+      'multiline': {
+        'max': 1
+      }
+    }]
+  }
+}],
 }
