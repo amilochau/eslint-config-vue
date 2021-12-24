@@ -15,4 +15,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build and test project
-        uses: amilochau/github-actions/build/node@amilochau/use-scripts-files
+        uses: amilochau/github-actions/build/node@v1
