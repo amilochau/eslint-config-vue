@@ -106,11 +106,6 @@ module.exports = {
       'single',
     ],
     'require-await': 'error',
-    semi: 'error',
-    'semi-style': [
-      'error',
-      'last',
-    ],
     'space-before-blocks': 'error',
     'space-before-function-paren': [
       'error',
