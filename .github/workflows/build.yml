@@ -10,7 +10,7 @@ on:
     - main
 
 env:
-  PROJECT_UI_OUTPUT: '/'
+  PROJECT_UI_OUTPUT: '/README.md' # we don't want to put more into the artifact
 
 jobs:
   build:
