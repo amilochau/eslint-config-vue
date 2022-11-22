@@ -10,7 +10,7 @@ on:
     - main
 
 env:
-  PROJECT_UI_OUTPUT: '/.github # we don't want to put more into the artifact
+  PROJECT_UI_OUTPUT: /.github # we don't want to put more into the artifact
 
 jobs:
   build:
