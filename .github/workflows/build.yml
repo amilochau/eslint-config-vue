@@ -9,6 +9,9 @@ on:
     branches:
     - main
 
+env:
+  PROJECT_UI_OUTPUT: '/'
+
 jobs:
   build:
     name: Build
@@ -17,3 +20,5 @@ jobs:
       - uses: actions/checkout@v3
       - name: Build and test project
         uses: amilochau/github-actions/build/node@v3
+        with:
+          relativeOutputPath: ${{ env.PROJECT_UI_OUTPUT }}
